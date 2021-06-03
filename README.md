@@ -7,6 +7,9 @@ Contacts:
 
 * Jorge Banegas ( jbanegas@cisco.com )
 
+**Requirements**
+- Python3
+- Switch config file inside project folder and name it switch-config.txt
 
 **Source Installation**
 
