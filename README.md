@@ -34,4 +34,4 @@ Run python script
 python config_render.py
 ```
 
-You should see a newly create .j2 file consisting of the vlan and interfaces configurations 
+You should see a newly create new_config.j2 file consisting of the vlan and interfaces configurations 
