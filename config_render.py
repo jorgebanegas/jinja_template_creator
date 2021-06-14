@@ -73,11 +73,29 @@ with open("switch-config.txt") as f:
                     # GigabitEthernet1/0/1 thru 48
                     try:
                         if counter1 < 49 and statechange(x,card_number):
-                            line = "interface GigabitEthernet" +  str(card_number) + "/0/" + str(counter1)
+                            if card_number == "2":
+                                line = "interface GigabitEthernet1/0/" + str(counter1)
+                            if card_number == "3":
+                                line = "interface GigabitEthernet2/0/" + str(counter1)
+                            if card_number == "4":
+                                line = "interface GigabitEthernet5/0/" + str(counter1)
+                            if card_number == "5":
+                                line = "interface GigabitEthernet6/0/" + str(counter1)
+                            if card_number == "6":
+                                line = "interface GigabitEthernet7/0/" + str(counter1)
                         else:
                             counter1 = 1
                             x = card_number
-                            line = "interface GigabitEthernet" +  str(card_number) + "/0/" + str(counter1)
+                            if card_number == "2":
+                                line = "interface GigabitEthernet1/0/" + str(counter1)
+                            if card_number == "3":
+                                line = "interface GigabitEthernet2/0/" + str(counter1)
+                            if card_number == "4":
+                                line = "interface GigabitEthernet5/0/" + str(counter1)
+                            if card_number == "5":
+                                line = "interface GigabitEthernet6/0/" + str(counter1)
+                            if card_number == "6":
+                                line = "interface GigabitEthernet7/0/" + str(counter1)
                         counter1 += 1
                     except IndexError:
                         continue
@@ -88,12 +106,41 @@ with open("switch-config.txt") as f:
                             x = card_number
 
                         if counter1 < 25:
-                            line = "interface GigabitEthernet" +  str(card_number) + "/0/" + str(counter1)
+                            if card_number == "2":
+                                line = "interface GigabitEthernet1/0/" + str(counter1)
+                            if card_number == "3":
+                                line = "interface GigabitEthernet2/0/" + str(counter1)
+                            if card_number == "4":
+                                line = "interface GigabitEthernet5/0/" + str(counter1)
+                            if card_number == "5":
+                                line = "interface GigabitEthernet6/0/" + str(counter1)
+                            if card_number == "6":
+                                line = "interface GigabitEthernet7/0/" + str(counter1)
+
                         if counter1 > 24 and counter1 < 49:
-                            line = "interface TenGigabitEthernet" +  str(card_number) + "/0/" + str(counter1)
+                            if card_number == "2":
+                                line = "interface TenGigabitEthernet1/0/" + str(counter1)
+                            if card_number == "3":
+                                line = "interface TenGigabitEthernet2/0/" + str(counter1)
+                            if card_number == "4":
+                                line = "interface TenGigabitEthernet5/0/" + str(counter1)
+                            if card_number == "5":
+                                line = "interface TenGigabitEthernet6/0/" + str(counter1)
+                            if card_number == "6":
+                                line = "interface TenGigabitEthernet7/0/" + str(counter1)
                         else:
                             x = card_number
-                            line = "interface GigabitEthernet" +  str(card_number) + "/0/" + str(counter1)
+
+                            if card_number == "2":
+                                line = "interface GigabitEthernet1/0/" + str(counter1)
+                            if card_number == "3":
+                                line = "interface GigabitEthernet2/0/" + str(counter1)
+                            if card_number == "4":
+                                line = "interface GigabitEthernet5/0/" + str(counter1)
+                            if card_number == "5":
+                                line = "interface GigabitEthernet6/0/" + str(counter1)
+                            if card_number == "6":
+                                line = "interface GigabitEthernet7/0/" + str(counter1)
                         counter1 += 1
                     except IndexError:
                         continue
