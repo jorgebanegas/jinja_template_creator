@@ -1,7 +1,7 @@
 
 # jinja_template_creator
 
-script that reads a config file then creates a jinja template based on the information from the config file
+script that reads a config file then creates a jinja template based on the information from the config file and then pushes the template onto your DNAC instance
 
 Contacts:
 
